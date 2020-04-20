@@ -52,10 +52,22 @@ main {
     display:flex;
 }
 .footer-container{
-    justify-content: center;
-    color:rgb(92, 92, 247);
+   
+    
 
 }
 .marker-btn{
     
 }
+.map {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }

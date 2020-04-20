@@ -38,8 +38,8 @@ class Container extends Component {
             <label htmlFor="to" >Enter your finish point</label>
             <br/>
             <input type='text' id="to" onChange={this.handleChange} placeholder="ride your bike to"/>
-            <button class="btn waves-effect waves-light" >let's
-                <i class="material-icons right">directions_bike</i>
+            <button className="btn waves-effect waves-light" >let's
+                <i className="material-icons right">directions_bike</i>
             </button>
         </form>
       );

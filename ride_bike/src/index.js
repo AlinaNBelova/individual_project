@@ -14,7 +14,8 @@ import 'materialize-css/dist/css/materialize.min.css'
 import{createStore} from 'redux';
 import {Provider} from 'react-redux';
 import rootReducer from './reducers/rootReducer';
-
+import Cluster from './components/Cluster'
+import ParksMap from './components/ParksMap'
 let saveToLocalStorage = (state)=>{
   try{
     const serializeState = JSON.stringify(state);
@@ -60,6 +61,8 @@ let store = createStore(rootReducer, persistedState, window.__REDUX_DEVTOOLS_EXT
         <Route exact path="/container" component={Container} />
         <Route exact path = "/parks" component ={Parks}/>
         <Route exact path = "/aboutme" component={AboutMe}/>
+        <Route exact path = '/cluster' component={Cluster}/>
+        <Route exact path = '/parksmap' component={ParksMap}/>
       </Switch>
     </BaseLayout>
   </BrowserRouter>,
